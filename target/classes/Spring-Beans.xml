@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"  
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+  
+<bean id="dieselEngine" class="in.chaithanya.beans.DieselEngine"/>
+
+<bean id="xyz" class="in.chaithanya.beans.DieselEngine" autowire-candidate="false"/>
+
+<bean id="car" class="in.chaithanya.beans.Car" autowire="constructor"/>
+
+<!-- <bean id="abc" class="in.chaithanya.beans.Car" autowire="no"/> -->
+
+<!-- <property name="dieselEngine" ref="dieselEngine"></property> 
+ --></beans>
